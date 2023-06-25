@@ -17,6 +17,7 @@ This project focuses on predicting salaries for data science jobs based on vario
    - Salary based on Employement Type
    - Comapany size and Average Salaries
    - Experience Level and Salary
+7. [Predictive Analysis](#predictive-analysis)
 
 ## EDA on Data Science Salaries
 
