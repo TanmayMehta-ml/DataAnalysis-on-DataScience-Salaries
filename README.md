@@ -1,6 +1,6 @@
 # Data Science Job Salaries Prediction
 
-This project focuses on predicting salaries for data science jobs based on various features such as work year, experience level, employment type, job title, remote work ratio, company location, and company size. It utilizes a RandomForestRegressor model to make predictions.
+This project focuses on predicting salaries for data science jobs based on various features such as work year, experience level, employment type, job title, remote work ratio, company location, and company size. It utilizes machine learning models for prediction.
 
 ## Table of Contents
 
@@ -14,47 +14,53 @@ This project focuses on predicting salaries for data science jobs based on vario
    - Top 10 Highest Paying Jobs
    - Salary Distribution
    - Work Year Distribution
-   - Salary Based on Employment Type
-   - Company Size and Average Salaries
-   - Experience Level and Salary
-7. [Predictive Analysis](#predictive-analysis)
-   - Handling Categorical Variables
-   - Splitting Training and Testing Data
-   - Choosing the Right ML Model
-   - Tuning the Hyperparameters of Random Forest
 
 ## EDA on Data Science Salaries
 
-This section explores the data through exploratory data analysis (EDA) techniques to gain insights and visualize different aspects of the dataset.
+This section explores the dataset through exploratory data analysis (EDA) techniques to gain insights and visualize different aspects of the dataset.
 
 ### About Dataset
 
-The dataset used for this project is called "Data Science Job Salaries Dataset". It is sourced from Kaggle and can be accessed [here](https://www.kaggle.com/datasets/arnabchaki/data-science-salaries-2023). The dataset contains information about data science job salaries, including 11 columns:
-
-- `work_year`: The year the salary was paid.
-- `experience_level`: The experience level in the job during the year.
-- `employment_type`: The type of employment for the role.
-- `job_title`: The role worked in during the year.
-- `salary`: The total gross salary amount paid.
-- `salary_currency`: The currency of the salary paid as an ISO 4217 currency code.
-- `salary_in_usd`: The salary in USD (target variable).
-- `employee_residence`: Employee's primary country of residence during the work year as an ISO 3166 country code.
-- `remote_ratio`: The overall amount of work done remotely.
-- `company_location`: The country of the employer's main office or contracting branch.
-- `company_size`: The median number of people that worked for the company during the year.
+The dataset used for this project is called "Data Science Job Salaries Dataset". It contains information about data science job salaries, including various features such as work year, experience level, employment type, job title, and more. The dataset was obtained from a reliable source, [Kaggle](https://www.kaggle.com/datasets/arnabchaki/data-science-salaries-2023).
 
 ### Importing Libraries
 
-The required libraries for data analysis and visualization are imported in this step.
+The following libraries and APIs were used for data analysis, visualization, and machine learning:
+
+- `pandas`: A powerful data manipulation library used for handling and analyzing structured data.
+- `numpy`: A library for mathematical operations and array manipulation.
+- `country_converter`: An API used for converting country codes to country names.
+- `matplotlib.pyplot`: A popular plotting library for creating visualizations.
+- `seaborn`: A statistical data visualization library based on matplotlib.
+- `plotly`: A library used for interactive and dynamic visualizations.
+- `WordCloud`: A library used to generate word clouds for visualizing textual data.
+- `nltk`: The Natural Language Toolkit library for text processing and analysis.
+- `sklearn`: The Scikit-learn library for machine learning algorithms and evaluation metrics.
 
 ### Loading Dataset
 
-The dataset is loaded into the project using a suitable method or library.
+The dataset is loaded into the project using the `pd.read_csv()` function from the `pandas` library. The dataset file is located at the specified path.
 
 ### Understanding the Data
 
-This section involves analyzing the dataset to gain a deeper understanding of its structure, feature types, and basic statistics.
+This section involves analyzing the dataset to gain a deeper understanding of its structure, feature types, and basic statistics. Various operations, such as accessing specific columns, counting unique values, and listing column names, are performed to understand the dataset better.
 
 ### Visualization
 
-Data visualization techniques are used to present meaningful insights and patterns from the dataset. This includes various visualizations such as bar plots, histograms, scatter plots, etc.
+Data visualization techniques are used to present meaningful insights and patterns from the dataset. This section includes several visualizations, such as word clouds, bar plots, histograms, and pie charts, to showcase different aspects of the dataset.
+
+#### WordCloud of Job Designations
+
+A word cloud is generated to visualize the frequency of different job designations in the dataset. The `WordCloud` library is used for this purpose.
+
+#### Top 10 Highest Paying Jobs
+
+A bar plot is created to display the top 10 highest paying jobs in the dataset. The `seaborn` library is used for this visualization.
+
+#### Salary Distribution
+
+A histogram plot is used to visualize the distribution of salaries in the dataset. The `seaborn` library is utilized for this visualization.
+
+#### Work Year Distribution
+
+A pie chart is created to showcase the distribution of work years in the dataset. The `matplotlib.pyplot` library is used to generate this visualization.
