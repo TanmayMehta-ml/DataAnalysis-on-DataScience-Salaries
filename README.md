@@ -14,6 +14,9 @@ This project focuses on predicting salaries for data science jobs based on vario
    - Top 10 Highest Paying Jobs
    - Salary Distribution
    - Work Year Distribution
+   - Salary based on Employement Type
+   - Comapany size and Average Salaries
+   - Experience Level and Salary
 
 ## EDA on Data Science Salaries
 
