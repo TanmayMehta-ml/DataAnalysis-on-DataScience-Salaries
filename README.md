@@ -2,9 +2,34 @@
 
 This project focuses on predicting salaries for data science jobs based on various features such as work year, experience level, employment type, job title, remote work ratio, company location, and company size. It utilizes a RandomForestRegressor model to make predictions.
 
-## Dataset
+## Table of Contents
 
-The dataset used for this project is called "Data Science Job Salaries Dataset". It contains information about data science job salaries, including 11 columns:
+1. [EDA on Data Science Salaries](#eda-on-data-science-salaries)
+2. [About Dataset](#about-dataset)
+3. [Importing Libraries](#importing-libraries)
+4. [Loading Dataset](#loading-dataset)
+5. [Understanding the Data](#understanding-the-data)
+6. [Visualization](#visualization)
+   - WordCloud of Job Designations
+   - Top 10 Highest Paying Jobs
+   - Salary Distribution
+   - Work Year Distribution
+   - Salary Based on Employment Type
+   - Company Size and Average Salaries
+   - Experience Level and Salary
+7. [Predictive Analysis](#predictive-analysis)
+   - Handling Categorical Variables
+   - Splitting Training and Testing Data
+   - Choosing the Right ML Model
+   - Tuning the Hyperparameters of Random Forest
+
+## EDA on Data Science Salaries
+
+This section explores the data through exploratory data analysis (EDA) techniques to gain insights and visualize different aspects of the dataset.
+
+### About Dataset
+
+The dataset used for this project is called "Data Science Job Salaries Dataset". It is sourced from Kaggle and can be accessed [here](https://www.kaggle.com/datasets/arnabchaki/data-science-salaries-2023). The dataset contains information about data science job salaries, including 11 columns:
 
 - `work_year`: The year the salary was paid.
 - `experience_level`: The experience level in the job during the year.
@@ -18,37 +43,18 @@ The dataset used for this project is called "Data Science Job Salaries Dataset".
 - `company_location`: The country of the employer's main office or contracting branch.
 - `company_size`: The median number of people that worked for the company during the year.
 
-## Model Training
+### Importing Libraries
 
-The project involves the following steps for model training:
+The required libraries for data analysis and visualization are imported in this step.
 
-1. Preprocessing: The dataset is preprocessed by dropping duplicates, replacing values in certain columns, and dropping unnecessary columns.
-2. Splitting Data: The dataset is split into predictor variables (X) and the target variable (y).
-3. One-Hot Encoding: One-hot encoding is performed on the predictor variables (X) to convert categorical variables into numerical format.
-4. Train-Test Split: The data is split into training and test sets using a test size of 0.2.
-5. Model Selection: A RandomForestRegressor model is chosen for its ability to handle both categorical and numerical features.
-6. Model Training: The RandomForestRegressor model is trained on the training data using the selected parameters.
-7. Model Evaluation: The trained model is evaluated on the test data using mean squared error (MSE), mean absolute error (MAE), and R-squared (R^2) scores.
+### Loading Dataset
 
-## Testing the Model
+The dataset is loaded into the project using a suitable method or library.
 
-To test the trained model with new data, follow these steps:
+### Understanding the Data
 
-1. Prepare the test data by creating a DataFrame with the required columns.
-2. Preprocess the test data in the same way as the training data (e.g., replacing values, one-hot encoding).
-3. Use the trained RandomForestRegressor model to make predictions on the preprocessed test data.
-4. Obtain the predicted salary in USD from the model.
+This section involves analyzing the dataset to gain a deeper understanding of its structure, feature types, and basic statistics.
 
-Example code for testing the model:
+### Visualization
 
-```python
-# Replace with the actual name of your trained model
-rf_best = RandomForestRegressor(max_depth=10, min_samples_split=10, n_estimators=50, random_state=0)
-
-# Prepare and preprocess the test data
-# ...
-
-# Make predictions using the trained model
-# ...
-
-print("Predicted salary in USD:", predicted_salary)
+Data visualization techniques are used to present meaningful insights and patterns from the dataset. This includes various visualizations such as bar plots, histograms, scatter plots, etc.
