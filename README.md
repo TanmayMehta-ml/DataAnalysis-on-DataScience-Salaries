@@ -49,18 +49,8 @@ This section involves analyzing the dataset to gain a deeper understanding of it
 
 Data visualization techniques are used to present meaningful insights and patterns from the dataset. This section includes several visualizations, such as word clouds, bar plots, histograms, and pie charts, to showcase different aspects of the dataset.
 
-#### WordCloud of Job Designations
+### Predictive Analysis
 
-A word cloud is generated to visualize the frequency of different job designations in the dataset. The `WordCloud` library is used for this purpose.
+This section focuses on predictive analysis using machine learning models to predict salaries based on the given dataset. It includes steps such as handling categorical variables, splitting the data into training and testing sets, choosing the right machine learning model, and tuning the hyperparameters of the selected model.
 
-#### Top 10 Highest Paying Jobs
-
-A bar plot is created to display the top 10 highest paying jobs in the dataset. The `seaborn` library is used for this visualization.
-
-#### Salary Distribution
-
-A histogram plot is used to visualize the distribution of salaries in the dataset. The `seaborn` library is utilized for this visualization.
-
-#### Work Year Distribution
-
-A pie chart is created to showcase the distribution of work years in the dataset. The `matplotlib.pyplot` library is used to generate this visualization.
+Please refer to the code files for detailed implementation and visualization of each section.
